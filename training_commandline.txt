@@ -1,0 +1,8 @@
+### Train the base model using pre-trained COCO weights(I ran using these weights,Download 'mask_rcnn_coco.h5' weights before starting the training)
+py custom_1.py train --dataset=C:/Users/Sourish/Mask_RCNN/custom --weights=coco
+
+### Train the base model using pre-trained imagenet weights(for this to download imagenet weights))
+py custom_1.py train --dataset=C:/Users/Sourish/Mask_RCNN/custom --weights=imagenet
+
+## We can even resume from the latest saved callback(latest saved weights)
+python3 custom.py train --dataset=C:/Users/Sourish/Mask_RCNN/custom --weights=last
